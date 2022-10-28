@@ -1,0 +1,135 @@
+@keyframes slidein {
+  0% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideout {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(1.7);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popimg {
+  0% {
+    transform: scale(0.96);
+  }
+  // 50% {
+  //   transform: scale(0.9);
+  // }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popup {
+  0% {
+    scale: 3;
+  }
+  30% {
+    scale: 5;
+  }
+  70% {
+    scale: 2;
+  }
+  100% {
+    scale: 0.85;
+  }
+}
+
+@keyframes fadename {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.95;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  65% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  79% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes inv {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: auto;
+  }
+}

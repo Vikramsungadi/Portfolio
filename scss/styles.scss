@@ -1,0 +1,17 @@
+@forward "partials";
+@forward "components";
+
+.portfolio {
+  // overflow: hidden;
+  // max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.none {
+  display: none;
+}
+
+/* @media (min-width: 650px) and (max-width: 1024px) {}
+@media (max-width: 650px) {}
+@media (max-width: 550px) {} */

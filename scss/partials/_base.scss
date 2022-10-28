@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.fonts {
+  font-family: "Poppins", sans-serif;
+  font-family: "Caveat", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Signika", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  background: var(--navy);
+}

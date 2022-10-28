@@ -1,0 +1,165 @@
+@use "../partials/mixins" as *;
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  max-width: fit-content;
+  @include flexcenter;
+  font-size: 5rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.name {
+  pointer-events: none;
+  font-family: "Montserrat";
+  color: var(--white);
+  line-height: 1.7;
+  @include flexcenter;
+  font-size: 1.3rem;
+  flex-direction: column;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navbar {
+  @include flex(center, space-between);
+  border-bottom: 1px solid var(--secondary);
+  min-height: 6rem;
+  /* padding: 1.3rem 10rem 1.3rem 4rem; */
+}
+.links {
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  display: flex;
+
+  ul {
+    @include flexAlign;
+    min-height: 4rem;
+    gap: 2rem;
+
+    li {
+      margin-bottom: 5px;
+      display: inline;
+      list-style: none;
+      transform-origin: center;
+      transition: color 200ms ease-in;
+
+      &:hover {
+        border-bottom: 2px solid var(--white);
+        color: var(--primary);
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+.logoi {
+  margin: 2rem 0 0 2rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: scale 0.3s ease;
+
+  img {
+    width: 130px;
+  }
+
+  &:hover {
+    scale: 1.15;
+  }
+}
+
+.menu {
+  display: none;
+  animation: pop 0.5s ease;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .menu {
+    display: none;
+    animation: pop 0.5s ease;
+  }
+}
+
+@media (max-width: 650px) {
+  .links {
+    display: none;
+  }
+  .overlay {
+    opacity: 0.2;
+  }
+  .menu {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    animation: pop 0.5s ease;
+  }
+
+  .menu--links {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(4, 10, 28, 0.8);
+    /* background-color: var(--secondary); */
+    position: absolute;
+    top: 71px;
+    right: 0;
+    font-size: 1.5rem;
+    /* transition: all 0.5s; */
+    animation: slidein 0.3s ease;
+    z-index: 10;
+    ul {
+      display: flex;
+      flex-direction: column;
+      min-height: 4rem;
+    }
+
+    li {
+      border-bottom: 1px solid var(--secondary);
+      display: inline;
+      min-height: 2.5rem;
+      list-style: none;
+      transform-origin: center;
+      transition: all 200ms ease-in;
+      padding: 1rem 1rem 1rem 2rem;
+
+      &:hover,
+      &:focus {
+        background-color: var(--secondary);
+        color: var(--primary);
+        cursor: pointer;
+      }
+
+      &:first-child {
+        border-bottom: none;
+        background-color: transparent;
+      }
+
+      &:first-child:hover,
+      &:first-child:focus {
+        background-color: transparent;
+        color: var(--primary);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .fa-xmark {
+    font-size: 3rem;
+    position: absolute;
+    top: -53px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+}

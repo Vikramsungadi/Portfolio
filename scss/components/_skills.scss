@@ -1,0 +1,75 @@
+@use "../partials/mixins" as *;
+@use "../partials/base" as *;
+@use "../partials/typography" as *;
+
+.skills--div {
+  rotate: -3deg;
+  margin-top: 10rem;
+  display: flex;
+  background-color: var(--navy);
+  width: 100%;
+}
+.skills--div1 {
+  padding-right: 1rem;
+}
+.skills--div2 {
+  padding-left: 1rem;
+}
+.skills--div1,
+.skills--div2 {
+  width: 100%;
+
+  //   margin-top: 10rem;
+  //   rotate: -3deg;
+  min-height: 4rem;
+  //   padding: 0 2rem;
+  gap: 4rem;
+  background-color: var(--secondary-dark);
+  @include flex(center, space-evenly);
+  flex-wrap: wrap;
+  //   z-index: -16;
+}
+
+.skill {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+
+  p {
+    font-size: 1.5rem;
+    transition: scale 0.3s ease;
+  }
+  &:hover img,
+  &:focus img {
+    scale: 3;
+    z-index: 2;
+  }
+  &:hover p {
+    scale: 0.5;
+  }
+
+  img {
+    width: 1.5rem;
+    transition: scale 0.3s ease;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .skills--div {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+@media (max-width: 650px) {
+  .skills--div {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+@media (max-width: 550px) {
+  .skills--div1,
+  .skills--div2 {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+}

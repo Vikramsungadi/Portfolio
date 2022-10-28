@@ -1,0 +1,15 @@
+@mixin flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexAlign {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex($adir, $dir) {
+  display: flex;
+  align-items: $adir;
+  justify-content: $dir;
+}
