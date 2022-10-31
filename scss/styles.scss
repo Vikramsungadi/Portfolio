@@ -15,3 +15,25 @@
 /* @media (min-width: 650px) and (max-width: 1024px) {}
 @media (max-width: 650px) {}
 @media (max-width: 550px) {} */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+
+  &-track {
+    background: var(--secondary-dark);
+    box-shadow: inset 0 0 5px var(--secondary);
+  }
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background: var(--primary);
+  }
+}

@@ -133,3 +133,62 @@
     width: auto;
   }
 }
+
+@keyframes rotateinf {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rotaterev {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
+
+@keyframes wrench {
+  80% {
+    rotate: -15deg;
+  }
+  100% {
+    rotate: 5deg;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 0;
+    translate: -120px 0;
+    z-index: -20;
+  }
+  100% {
+    translate: 0;
+  }
+}
+@keyframes hide2 {
+  0% {
+    opacity: 0;
+    translate: -150px 0;
+    z-index: -20;
+  }
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
