@@ -1,0 +1,237 @@
+@use "./navbar";
+.footer--section {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+}
+.contact {
+  max-width: 1140px;
+
+  display: grid;
+  grid-template-columns: 25rem 25rem 1fr;
+  //   background-color: var(--navy);
+  // border-top: 1px solid var(--secondary);
+  margin: 5rem auto 0 auto;
+  padding: 1rem 2rem 2rem;
+
+  h3 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  &__icons {
+    font-size: 2rem;
+    display: none;
+    gap: 2rem;
+    margin: 1rem;
+    span {
+      transition: all 0.5s ease;
+      .fa-brands,
+      .fa-solid {
+        transition: all 0.5s ease;
+      }
+      &:hover,
+      &:focus {
+        .fa-linkedin {
+          scale: 1.5;
+          color: #0077b5;
+        }
+        .fa-instagram {
+          scale: 1.5;
+          color: #e95950;
+        }
+        .fa-envelope {
+          scale: 1.5;
+          color: #ea4335;
+        }
+        .fa-github {
+          scale: 1.5;
+          color: black;
+        }
+      }
+    }
+  }
+}
+.dev {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+.page--sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.stack {
+  display: inline-block;
+
+  height: 1.8rem;
+  overflow: hidden;
+
+  &__skill {
+    padding: 1px 0;
+    animation: slideup 10s linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+.social {
+  font-size: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  flex-direction: column;
+
+  &__detail {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    min-width: fit-content;
+    gap: 2rem;
+    font-size: 1.3rem;
+    img {
+      width: 2rem;
+      color: black;
+    }
+    span {
+      transition: color 0.3s linear;
+    }
+    i {
+      transition: all 0.3s linear;
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      span {
+        color: var(--primary);
+      }
+      .fa-linkedin {
+        scale: 2;
+        color: #0077b5;
+      }
+      .fa-instagram {
+        scale: 2;
+        color: #e95950;
+      }
+      .fa-envelope {
+        scale: 2;
+        color: #ea4335;
+      }
+      .fa-github {
+        scale: 2;
+        color: black;
+      }
+    }
+  }
+}
+.connect {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: var(--secondary-dark);
+    position: relative;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-dark);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    z-index: 6;
+    &::before {
+      z-index: -2;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+
+      height: 0;
+      width: 0;
+
+      border-radius: 0.5rem;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
+    &:hover::before,
+    &:focus::before {
+      background-color: var(--button-bg-hover);
+
+      // border: 1px solid var(--primary);
+
+      scale: 1.1;
+    }
+    &:hover::before,
+    &:focus::before {
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--button-color-hover);
+      translate: 5px -5px 0;
+      scale: 1.1;
+      box-shadow: 0 0 15px #333;
+    }
+  }
+}
+
+.contact {
+  .links {
+    @extend .links;
+    flex-direction: column;
+    font-size: 1.3rem;
+    ul {
+      flex-direction: column;
+      gap: 1rem;
+
+      li {
+        border-bottom: none;
+        padding: 0;
+        opacity: 0.75;
+
+        &:hover,
+        &:focus {
+          scale: 1;
+          opacity: 1;
+        }
+
+        &::before {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+.phone {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: "768px") {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+
+    &__icons {
+      display: flex;
+    }
+  }
+  .page--sections {
+    display: none;
+  }
+  .stack {
+    &__skill {
+      padding: 1.5px 0;
+    }
+  }
+}

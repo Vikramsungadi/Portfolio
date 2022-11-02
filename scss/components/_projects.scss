@@ -3,7 +3,7 @@
 @use "../partials/typography" as *;
 
 .PROJECTS {
-  margin: 10rem auto 3rem auto;
+  margin: 10rem auto 5rem auto;
   overflow: hidden;
 
   .heading {
@@ -19,6 +19,7 @@
   }
 }
 .projects {
+  padding-bottom: 1rem;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -28,10 +29,11 @@
   border-radius: 10px;
   padding-bottom: 1rem;
   max-width: 350px;
-  background-color: var(--navy);
+  background-color: var(--card-bg);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 5px 2px var(--secondary-dark);
+  // border: 1px solid var(--primary);
+  box-shadow: var(--card-shadow);
   height: fit-content;
   overflow: hidden;
   animation: fade 0.5s ease;
@@ -74,7 +76,7 @@
 
   h3 {
     font-family: "Caveat";
-    color: var(--primary);
+    color: var(--card-h3);
     font-size: 3rem;
     margin: 1rem 0;
   }
@@ -118,7 +120,7 @@
     padding: 0.3rem 1rem;
     border-radius: 10px;
     background-color: var(--navy);
-    border: 0.5px solid var(--secondary-dark);
+    border: 0.5px solid var(--stack-border);
     text-transform: uppercase;
     list-style: none;
     transition: all 0.3s ease;
@@ -197,13 +199,13 @@
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: var(--secondary-dark);
+    background: var(--stack-hover);
     z-index: -1;
     transition: transform 0.3s ease;
   }
   &:hover {
     color: var(--white);
-    border-color: var(--primary);
+    border-color: var(--stack-border);
   }
   &:hover::before {
     width: 100%;

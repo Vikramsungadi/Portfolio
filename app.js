@@ -13,9 +13,9 @@ const aboutExplain = document.querySelector(".about__explain");
 const aboutDetails = document.querySelector(".about__details");
 const interestExplain = document.querySelector(".interest__explain");
 const todoimg = document.querySelector(".todoimg");
+const body = document.body;
 
 //                                      EVENT LISTENERS
-
 menu.addEventListener("click", menuslide);
 menuLinks.addEventListener("click", closeMenu);
 expand.addEventListener("click", expandDetails);
@@ -27,18 +27,19 @@ abouts.addEventListener("mousemove", showAbout);
 abouts.addEventListener("click", showAbout);
 todoimg.addEventListener("mouseover", changeImage);
 todoimg.addEventListener("click", changeImage);
+document.addEventListener("DOMContentLoaded", preserveTheme);
 
+// MENU OPENING FUNCTION
 function menuslide(e) {
   if (e.target.classList.contains("fa-bars")) {
-    // if (menuLinks.classList.contains("none")) {
     menuLinks.classList.toggle("none");
     menu.classList.toggle("none");
     all.classList.toggle("overlay");
     menu.style.display = "none";
-    // }
   }
 }
 
+// MENU CLOSING FUNCTION
 function closeMenu(e) {
   parent = e.target.parentElement;
   if (
@@ -56,16 +57,10 @@ function closeMenu(e) {
   }
 }
 
+// PROJECT FEATURES SHOWING FUNCTION
 function expandDetails(e) {
   if (e.target.classList.contains("fa-circle-chevron-down")) {
     chevron = e.target;
-    // projectDetails = e.target.closest(".project__details");
-    // console.log(projectDetails);
-    // ul = document.createElement("ul");
-    // li1 = document.createElement("li");
-    // li2 = document.createElement("li");
-    // li3 = document.createElement("li");
-    // checkul = projectDetails.querySelector("ul");
     if ((chevron.style.rotate = "180deg")) {
       chevron.style.rotate = "360deg";
     } else {
@@ -75,36 +70,6 @@ function expandDetails(e) {
     features = projectDetails.querySelector(".features");
 
     features.classList.toggle("none");
-
-    // features.ontransitionend = function () {
-    // };
-
-    // if (!checkul) {
-    //   chevron.style.rotate = "180deg";
-    //   title = projectDetails.querySelector(".project__title");
-
-    //   if (title.innerText === "todo1" || "todo2" || "todo3") {
-    //     li1.innerText = "Editing";
-    //     li2.innerText = "Filtering";
-    //     li3.innerText = "DarkMode";
-    //     ul.append(li1, li2, li3);
-    //     ul.style.animation = "fadename 450ms ease";
-
-    //     projectDetails.append(ul);
-
-    //     setTimeout(() => {
-    //       ul.style.animation = "";
-    //     }, 500);
-    //   }
-    // } else {
-    //   chevron.style.rotate = "0deg";
-
-    //   checkul.style.animation = "fadename 450ms ease";
-
-    //   setTimeout(() => {
-    //     checkul.remove();
-    //   }, 500);
-    // }
   }
 }
 
@@ -144,15 +109,19 @@ function poplogos(e) {
   }, 100);
 }
 
+// ABOUT HANDLING FUNCTION
 function showCategory(e) {
   let text = e.target.innerText;
 
   let categories = Array.from(category.children);
   categories.forEach((categoryy) => {
     if (categoryy.innerText === text) {
-      categoryy.style.setProperty("background-color", "var(--secondary-dark)");
+      categoryy.style.setProperty(
+        "background-color",
+        "var(--about-background)"
+      );
       categoryy.style.setProperty("opacity", "1");
-    } else {
+    } else if (text.length < 15) {
       categoryy.style.setProperty("background-color", "");
       categoryy.style.setProperty("opacity", "0.2");
     }
@@ -162,14 +131,14 @@ function showCategory(e) {
   let categorySkill = Array.from(categorySkills.children);
 
   if (text === "FrontEnd" || "Backend" || "Others") {
-    Array.from(categorySkill).forEach((skill_list) => {
+    categorySkill.forEach((skill_list) => {
       if (skill_list.classList.contains(lowertext)) {
         skill_list.style.setProperty(
           "background-color",
-          "var(--secondary-dark)"
+          "var(--about-background)"
         );
         skill_list.classList.remove("none");
-      } else {
+      } else if (text.length < 15) {
         if (!skill_list.classList.contains("none")) {
           skill_list.classList.add("none");
         }
@@ -180,20 +149,22 @@ function showCategory(e) {
 
 function showAbout(e) {
   let text = e.target.innerText;
-
   let headings = Array.from(abouts.children);
   headings.forEach((heading) => {
     if (heading.innerText === text) {
-      heading.style.setProperty("background-color", "var(--secondary-dark)");
+      heading.style.setProperty("background-color", "var(--about-background)");
       heading.style.setProperty("opacity", "1");
-    } else {
+    } else if (text.length < 14) {
       heading.style.setProperty("background-color", "");
       heading.style.setProperty("opacity", "0.2");
     }
   });
 
   if (text === "About") {
-    aboutExplain.style.setProperty("background-color", "var(--secondary-dark)");
+    aboutExplain.style.setProperty(
+      "background-color",
+      "var(--about-background)"
+    );
     aboutExplain.classList.remove("none");
 
     if (!interestExplain.classList.contains("none")) {
@@ -202,7 +173,7 @@ function showAbout(e) {
   } else if (text === "Interests") {
     interestExplain.style.setProperty(
       "background-color",
-      "var(--secondary-dark)"
+      "var(--about-background)"
     );
     interestExplain.classList.remove("none");
 
@@ -212,6 +183,7 @@ function showAbout(e) {
   }
 }
 
+// CHANGING IMAGE ON PROJECT
 function changeImage(e) {
   if (e.target.classList.contains("todoimg")) {
     e.target.style.animation = "fade 0.5s ease";
@@ -234,11 +206,48 @@ function changeImage(e) {
     }, 500);
   }
 }
-function changeImageAgain(e) {
-  if (e.target.classList.contains("todoimg")) {
-    let imgsrc = e.target.src;
-    let modifiedsrc = imgsrc.replace("todo2.png", "todo.png");
 
-    e.target.src = modifiedsrc;
+// THEME CHANGING
+const themes_list = ["green", "navy", "lavender", "orange"];
+const themes = document.querySelector(".theme");
+const themes_array = Array.from(themes.children);
+
+themes.addEventListener("click", changeTheme);
+
+function changeTheme(e) {
+  if (themes_list.includes(e.target.classList.value)) {
+    let theme = e.target.classList.value;
+
+    themeHighlighter(themes_array, theme);
+
+    localStorage.setItem("theme", JSON.stringify(theme));
+
+    body.classList = "";
+
+    body.classList.add(theme);
   }
+}
+
+// Helper Function to HighLight Theme
+function themeHighlighter(arrayOfThemes, theme) {
+  arrayOfThemes.forEach((theme_color) => {
+    if (theme_color.classList.value === theme) {
+      theme_color.style.scale = "1.15";
+    } else {
+      theme_color.style.scale = "0.7";
+    }
+  });
+}
+
+//  Saving theme to LS
+function preserveTheme() {
+  if (localStorage.getItem("theme") == null) {
+    let theme = "navy";
+    localStorage.setItem("theme", JSON.stringify(theme));
+  }
+  let theme = JSON.parse(localStorage.getItem("theme"));
+
+  themeHighlighter(themes_array, theme);
+  body.classList = "";
+  body.classList.add(theme);
 }

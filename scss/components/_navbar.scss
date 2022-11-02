@@ -96,8 +96,18 @@
   cursor: pointer;
   transition: scale 0.3s ease;
 
-  img {
-    width: 130px;
+  .img {
+    width: 13rem;
+
+    .text-color {
+      fill: var(--logo-text) !important;
+    }
+    .text-stroke {
+      stroke: var(--logo-stroke);
+    }
+    .text.fill {
+      fill: var(--logo-text);
+    }
   }
 
   &:hover {
@@ -138,7 +148,7 @@
   .menu--links {
     height: 100vh;
     width: 50vw;
-    background-color: rgba(4, 10, 28, 0.8);
+    background-color: var(--navy);
     /* background-color: var(--secondary); */
     position: absolute;
     top: 71px;

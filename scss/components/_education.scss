@@ -1,5 +1,6 @@
-// .education--section {
-// }
+.education--section {
+  margin-bottom: 3.5rem;
+}
 
 .education {
   display: grid;
@@ -11,6 +12,7 @@
 }
 
 .education__image {
+  width: 70%;
   .heading {
     font-size: 3rem;
     text-align: center;
@@ -22,10 +24,14 @@
       color: var(--primary);
     }
   }
-  img {
+  .img {
     width: 100%;
-    max-width: 500px;
-    fill: var(--primary);
+    max-width: 700px;
+
+    .cls-18,
+    .cls-20 {
+      fill: var(--primary);
+    }
   }
   &:hover .heading,
   &:focus .heading {
@@ -33,7 +39,6 @@
     scale: 1.03;
   }
 }
-
 .education__details {
   margin: 0;
   justify-self: flex-start;
@@ -41,7 +46,7 @@
 
   h2 {
     // margin-top: 2rem;
-    color: var(--primary);
+    color: var(--ed-h2);
     font-size: 2.5rem;
     padding: 1rem 0;
     transition: all 0.3s ease;
@@ -105,7 +110,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--secondary);
+    background-color: var(--education);
     border-radius: 10px;
     scale: 1.01;
     transition: all 0.5s ease;

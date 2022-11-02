@@ -2,14 +2,233 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;300;400;500;600;700&display=swap");
 
 :root {
-  --primary: #66fcf1;
+  --primary: rgb(102, 252, 241);
   --primary-dark: #45a29e;
   --secondary: #1f2833;
   --secondary-dark: #152f3d;
+
+  --svg-light: rgb(102, 252, 241);
+  --svg-stroke: rgb(102, 252, 241);
+
+  --logo-text: white;
+  --logo-stroke: rgb(102, 252, 241);
+
+  --about-background: #152f3d;
+  --about-text: var(--primary);
+
+  --button-bg-hover: var(--primary);
+  --button-color-hover: #1f2833;
+
+  --education: #152f3d;
   --black: #0b0c10;
   --gray: #c5c6c7;
   --white: #feffff;
   --navy: #030712;
+
+  --ed-h2: var(--primary);
+  --card-bg: var(--navy);
+  --card-h3: var(--primary);
+  --footer-bg: var(--secondary-dark);
+  --stack-border: var(--primary);
+  --stack-hover: var(--secondary-dark);
+
+  --skills-bg: var(--secondary-dark);
+  --footer-text-color: var(--white);
+
+  --gradient: linear-gradient(
+    30deg,
+    rgb(102, 252, 241) 44%,
+    rgb(181, 243, 243) 100%
+  );
+  --card-shadow: 0 0 5px 2px var(--secondary-dark);
+}
+
+// --white: #333;
+
+// --secondary: rgb(102, 196, 196);
+//   Pinky: #fbe3e8
+// Blue Greeny: #5cbdb9
+// Teeny Greeny: #ebf6f5
+
+.green {
+  --primary: rgb(12, 167, 161);
+  --primary-dark: #45867f;
+  --secondary: rgb(131, 205, 202);
+  --secondary-dark: #ebf6f5;
+
+  --svg-light: rgb(12, 167, 161);
+  --svg-stroke: rgb(12, 167, 161);
+  --svg-dark: #6dc6bd;
+
+  --logo-text: rgb(6, 60, 58);
+  --logo-stroke: #45867f;
+
+  --about-background: #ebf6f5;
+  --about-text: var(--primary);
+
+  --button-bg-hover: #ebf6f5;
+  --button-color-hover: rgb(6, 60, 58);
+  --education: #ebf6f5;
+
+  --ed-h2: var(--primary);
+  --card-bg: var(--navy);
+  --card-h3: var(--primary);
+  --footer-bg: var(--secondary-dark);
+  --stack-border: var(--primary);
+  --stack-hover: var(--secondary-dark);
+
+  --skills-bg: var(--secondary-dark);
+  --footer-text-color: var(--white);
+  --gradient: linear-gradient(
+    30deg,
+    rgba(15, 195, 189, 1) 44%,
+    rgba(254, 255, 255, 1) 100%
+  );
+  --card-shadow: 0 0 10px 5px var(--secondary-dark);
+  --white: rgb(6, 60, 58);
+  --navy: #ffffff;
+}
+
+.lavender {
+  --primary: rgb(141 84 151);
+  --secondary-dark: #e0caff;
+  --secondary: #d0bdf4;
+  --svg-light: #c5b0e3;
+  --svg-stroke: #976de8;
+  --logo-text: rgb(141 84 151);
+  --logo-stroke: rgb(79 35 88);
+  --about-background: #ddbfe3;
+  --about-text: var(--primary);
+  --button-bg-hover: #ddbfe3;
+  --button-color-hover: #4f2358;
+  --education: #d7cfe4;
+  --black: black;
+  --white: rgb(79, 35, 88);
+  --navy: #f5f8fd;
+  --ed-h2: var(--primary);
+  --card-bg: #fdf5ff;
+  --card-h3: rgb(141 84 151);
+  --footer-bg: #ddbfe3;
+  --stack-border: rgb(201 146 211);
+  --stack-hover: rgb(247 202 255);
+  --skills-bg: #d5c7e9;
+  --footer-text-color: var(--white);
+  --gradient: linear-gradient(30deg, var(--primary) 44%, var(--education) 100%);
+  --card-shadow: 0 0 5px 2px var(--secondary-dark);
+  --primary-dark: rgb(128, 67, 113);
+}
+
+// --card-shadow: 0 0 5px 2px var(--secondary-dark);  --primary-dark: rgb(128, 67, 113);
+// --primary: rgb(137, 103, 144);
+
+// --secondary-dark: rgb(223, 187, 218);
+// --secondary: rgb(191, 173, 204);
+
+// --svg-light: rgb(93, 57, 84);
+// --svg-stroke: rgb(182, 42, 42);
+
+// --logo-text: rgb(86, 44, 94);
+// --logo-stroke: rgb(242, 186, 228);
+
+// --about-background: rgb(223, 187, 218);
+// --about-text: rgb(223, 187, 218);
+
+// --button-bg-hover: var(--secondary-dark);
+// --button-color-hover: rgb(242, 186, 228);
+
+// --ed-h2: var(--primary);
+// --card-bg: var(--navy);
+// --card-h3: var(--primary);
+// --footer-bg: var(--secondary-dark);
+// --stack-border: var(--primary);
+// --stack-hover: var(--secondary-dark);
+
+// --skills-bg: var(--secondary-dark);
+// --footer-text-color: var(--white);
+
+// --education: rgb(253, 230, 248);
+// --black: black;
+// --white: rgb(79, 35, 88);
+// --navy: rgb(255, 255, 255);
+// --gradient: linear-gradient(
+//   30deg,
+//   var(--primary-dark) 44%,
+//   var(--secondary) 100%
+// );
+// --card-shadow: 0 0 5px 2px var(--secondary-dark);
+
+.whiteblue {
+  --primary: rgb(0, 171, 179);
+  --primary-dark: rgb(8, 136, 142);
+  --secondary: rgb(45, 110, 113);
+  --secondary-dark: rgb(214, 238, 239);
+
+  --svg-light: rgb(0, 171, 179);
+  --svg-stroke: rgb(0, 171, 179);
+
+  --logo-text: rgb(5, 75, 79);
+  --logo-stroke: rgb(0, 171, 179);
+
+  --button-bg-hover: rgb(8, 136, 142);
+  --button-color-hover: rgb(0, 171, 179);
+
+  --education: rgb(214, 238, 239);
+
+  --about-background: rgb(214, 238, 239);
+  --about-text: var(--primary);
+
+  --black: black;
+  --white: rgb(5, 75, 79);
+  --navy: rgb(255, 255, 255);
+
+  --ed-h2: var(--primary);
+  --card-bg: var(--navy);
+  --card-h3: var(--primary);
+  --footer-bg: var(--secondary-dark);
+  --stack-border: var(--primary);
+  --stack-hover: var(--secondary-dark);
+
+  --skills-bg: var(--secondary-dark);
+  --footer-text-color: var(--white);
+
+  --gradient: linear-gradient(
+    30deg,
+    var(--primary) 44%,
+    var(--primary-dark) 100%
+  );
+  --card-shadow: 0 0 5px 2px var(--secondary-dark);
+}
+
+.orange {
+  --primary: hsl(26, 100%, 55%);
+  --primary-dark: hsl(26, 47%, 46%);
+  --secondary: hsl(25, 100%, 94%);
+  --secondary-dark: hsl(25, 100%, 94%);
+  --svg-light: hsl(22.5, 98.8%, 67.3%);
+  --svg-stroke: hsl(0, 0%, 100%);
+  --logo-text: rgb(255, 151, 72);
+  --logo-stroke: rgb(41, 44, 49);
+  --about-background: rgb(251 224 203);
+  --about-text: var(--primary);
+  --ed-h2: hsl(26deg 83% 59%);
+  --card-bg: var(--navy);
+  --card-h3: var(--primary);
+  --footer-bg: hsl(26deg 87% 89%);
+  --stack-border: var(--primary);
+  --skills-bg: var(--secondary-dark);
+  --stack-hover: var(--secondary-dark);
+  --footer-text-color: var(--white);
+  --button-bg-hover: rgb(255 125 26);
+  --button-color-hover: rgb(29 32 37);
+  --education: rgb(253 237 225);
+  --gradient: linear-gradient(
+    45deg,
+    var(--primary) 26%,
+    var(--secondary-dark) 82%
+  );
+  --white: hsl(220, 13%, 13%);
+  --navy: hsl(0, 0%, 100%);
+  --card-shadow: 0 0 5px rgb(255 216 186);
 }
 
 .theme {
@@ -21,3 +240,21 @@
   --white: #feffff;
   --navy: #030712;
 }
+
+// --primary: ;
+// --primary-dark: ;
+// --secondary: ;
+// --secondary-dark: ;
+
+// --svg-light: ;
+// --svg-stroke: ;
+
+// --logo-text: ;
+// --logo-stroke: ;
+// --button-bg-hover: ;
+// --button-color-hover: ;
+// --education: ;
+// --black: ;
+// --gray: ;
+// --white: ;
+// --navy: ;

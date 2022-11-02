@@ -1,5 +1,71 @@
 // @use "../partials/base";
 
+.HERO-SECTION {
+  position: relative;
+}
+.theme {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--education);
+  z-index: 20;
+  position: absolute;
+  top: 1.5rem;
+  right: 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px 0 0 10px;
+
+  div {
+    z-index: 2;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    // border: 0.5px solid white;
+    transition: all 0.3s ease;
+    scale: 0.85;
+
+    &:hover,
+    &:focus {
+      scale: 1.15;
+    }
+  }
+
+  .green {
+    background: linear-gradient(
+      33deg,
+      rgba(15, 195, 189, 1) 50%,
+      rgba(254, 255, 255, 1) 50%
+    );
+  }
+
+  .lavender {
+    background: linear-gradient(
+      33deg,
+      rgb(128, 67, 113) 50%,
+      rgba(254, 255, 255, 1) 50%
+    );
+  }
+
+  .navy {
+    background: linear-gradient(
+      33deg,
+      rgb(102, 252, 241) 50%,
+      rgb(31, 40, 51) 50%
+    );
+  }
+  .orange {
+    background: linear-gradient(
+      33deg,
+      rgb(255, 125, 26) 50%,
+      hsl(25, 100%, 94%) 50%
+    );
+  }
+}
+
 .grid--1x2 {
   // height: 65vh;
   margin: 3rem auto;
@@ -19,11 +85,7 @@
   h1 {
     display: inline-block;
     font-size: 5.5rem;
-    background: linear-gradient(
-      30deg,
-      rgba(102, 252, 241, 1) 44%,
-      rgba(254, 255, 255, 1) 100%
-    );
+    background: var(--gradient);
     display: inline-block;
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,7 +132,7 @@
   span {
     font-size: 1.5rem;
     display: block;
-    color: var(--gray);
+    opacity: 0.7;
   }
 
   &:hover p::before {
@@ -96,10 +158,24 @@
   width: 100%;
   position: relative;
 
-  img {
+  .img {
     animation: popimg 3s ease;
     position: relative;
     max-width: 450px;
+  }
+  .st0,
+  .st6,
+  .st5,
+  .st7,
+  .st3,
+  .st4 {
+    fill: var(--svg-light);
+  }
+
+  .st3,
+  .st4,
+  .st10 {
+    stroke: var(--svg-dark);
   }
 
   .quote {
@@ -212,7 +288,8 @@
     span {
       width: 100%;
     }
-    img {
+    .img {
+      width: 100%;
       max-width: 350px;
     }
     .intro--img {
@@ -232,5 +309,21 @@
   .grid--1x2 {
     grid-template-columns: 1fr;
     gap: 5rem;
+  }
+}
+@media (max-width: "550px") {
+  .HERO-SECTION {
+    .theme {
+      top: 10px;
+      padding-left: 0.75rem;
+    }
+  }
+}
+@media (min-width: "550px") and (max-width: "768px") {
+  .HERO-SECTION {
+    .theme {
+      top: -2rem;
+      margin-left: 5px;
+    }
   }
 }
