@@ -16,7 +16,7 @@
   position: relative;
   display: inline-block;
   -webkit-animation: fadename 3s none;
-          animation: fadename 3s none;
+  animation: fadename 3s none;
 }
 
 .bulb {
@@ -29,7 +29,11 @@
 h1 {
   display: inline-block;
   font-size: 5.5rem;
-  background: linear-gradient(30deg, rgb(102, 252, 241) 44%, rgb(254, 255, 255) 100%);
+  background: linear-gradient(
+    30deg,
+    rgb(102, 252, 241) 44%,
+    rgb(254, 255, 255) 100%
+  );
   display: inline-block;
   background-clip: text;
   -webkit-background-clip: text;
@@ -71,4 +75,4 @@ h1 {
   right: 0;
   font-family: "Caveat";
   /* transform: rotate3d(1, 2, 3, 10deg); */
-}/*# sourceMappingURL=hero.css.map */
+} /*# sourceMappingURL=hero.css.map */
