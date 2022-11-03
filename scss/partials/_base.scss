@@ -19,9 +19,11 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   color: var(--white);
   background: var(--navy);
+  overflow-x: hidden;
 }
 
 a {

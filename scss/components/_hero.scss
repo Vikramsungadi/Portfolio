@@ -2,8 +2,10 @@
 
 .HERO-SECTION {
   position: relative;
+  overflow-x: hidden;
 }
 .theme {
+  width: max-content;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -14,8 +16,12 @@
   position: absolute;
   top: 1.5rem;
   right: 0rem;
-  padding: 1rem 1rem 1rem 1rem;
+  justify-content: center;
+  min-width: 4rem;
+  padding: 1rem 0;
   border-radius: 10px 0 0 10px;
+  animation: themeAnim 2s ease-in-out;
+  // animation-delay: 2s;
 
   div {
     z-index: 2;
@@ -81,7 +87,12 @@
 
 .intro {
   padding: 0 2.5rem;
+  // animation: hide 1.5s ease;
 
+  .hi {
+    position: relative;
+    animation: hide 1s ease;
+  }
   h1 {
     display: inline-block;
     font-size: 5.5rem;
@@ -91,8 +102,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.4s ease;
+    animation: fade 2s ease-in-out;
   }
-
   p {
     position: relative;
     display: inline-block;
@@ -129,10 +140,11 @@
     }
   }
 
-  span {
+  .tag-line {
     font-size: 1.5rem;
     display: block;
     opacity: 0.7;
+    animation: fadeup 3s ease-in;
   }
 
   &:hover p::before {
@@ -159,7 +171,7 @@
   position: relative;
 
   .img {
-    animation: popimg 3s ease;
+    animation: popimg 2s ease;
     position: relative;
     max-width: 450px;
   }
@@ -220,6 +232,9 @@
   }
 }
 @media (max-width: 650px) {
+  .theme {
+    min-width: 3.2rem;
+  }
   .grid--1x2 {
     padding-bottom: 0;
   }
@@ -233,7 +248,7 @@
       font-size: 2.5rem;
     }
 
-    span {
+    .tag-line {
       font-size: 1.2rem;
     }
   }
@@ -278,7 +293,7 @@
       transition: all 0.3s ease;
     }
 
-    span {
+    .tag-line {
       font-size: 1.5rem;
       transition: all 0.3s ease;
     }
@@ -309,21 +324,5 @@
   .grid--1x2 {
     grid-template-columns: 1fr;
     gap: 5rem;
-  }
-}
-@media (max-width: "550px") {
-  .HERO-SECTION {
-    .theme {
-      top: 10px;
-      padding-left: 0.75rem;
-    }
-  }
-}
-@media (min-width: "550px") and (max-width: "768px") {
-  .HERO-SECTION {
-    .theme {
-      top: -2rem;
-      margin-left: 5px;
-    }
   }
 }

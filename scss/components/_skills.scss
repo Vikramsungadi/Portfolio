@@ -3,6 +3,7 @@
 @use "../partials/typography" as *;
 
 .skills--div {
+  // overflow: hidden;
   rotate: -3deg;
   margin-top: 10rem;
   display: flex;
@@ -18,16 +19,11 @@
 .skills--div1,
 .skills--div2 {
   width: 100%;
-
-  //   margin-top: 10rem;
-  //   rotate: -3deg;
   min-height: 4rem;
-  //   padding: 0 2rem;
   gap: 4rem;
   background-color: var(--skills-bg);
   @include flex(center, space-evenly);
   flex-wrap: wrap;
-  //   z-index: -16;
 }
 
 .skill {

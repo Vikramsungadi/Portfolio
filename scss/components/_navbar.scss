@@ -22,12 +22,10 @@
 }
 
 .navbar {
-  // margin: 0 auto;
-  // max-width: 1280px;
   @include flex(center, space-between);
   border-bottom: 1px solid var(--secondary);
   min-height: 6rem;
-  /* padding: 1.3rem 10rem 1.3rem 4rem; */
+  animation: navAnim 2s ease-in-out;
 }
 .links {
   margin-right: 10rem;
@@ -116,6 +114,7 @@
 }
 
 .menu {
+  // position: fixed;
   display: none;
   animation: pop 0.5s ease;
 }
@@ -130,6 +129,11 @@
 }
 
 @media (max-width: 650px) {
+  .navbar {
+    height: 4rem;
+
+    animation: fade 2s ease-in-out;
+  }
   .links {
     display: none;
   }
@@ -150,7 +154,7 @@
     width: 50vw;
     background-color: var(--navy);
     /* background-color: var(--secondary); */
-    position: absolute;
+    position: fixed;
     top: 71px;
     right: 0;
     font-size: 1.5rem;
@@ -196,14 +200,12 @@
       }
     }
   }
-
-  .fa-xmark {
-    font-size: 3rem;
-    position: absolute;
-    top: -53px;
-    right: 16px;
+  .menu__btns {
+    .fa-xmark {
+      font-size: 3rem;
+      position: absolute;
+      top: -53px;
+      right: 16px;
+    }
   }
-}
-
-@media (max-width: 550px) {
 }
