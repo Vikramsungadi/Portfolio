@@ -68,11 +68,8 @@
 }
 
 .project__details {
-  //   display: flex;
-  //   flex-direction: column;
   transition: all 0.3s ease;
   margin: 0 2rem 2rem;
-  // animation: fade 0.5s ease;
 
   h3 {
     font-family: "Caveat";
@@ -83,7 +80,6 @@
 
   p {
     font-family: "Signiks";
-    // color: var(--primary-dark);
     font-size: 1.4rem;
     margin: 1rem 1rem 1rem 0;
     line-height: 2;
@@ -108,7 +104,6 @@
 
   ul {
     display: flex;
-    // flex-direction: column;
     gap: 1rem;
     margin: 2rem 0 0 0;
   }
@@ -132,7 +127,6 @@
     }
 
     &:hover {
-      //   visibility: visible;
       color: var(--primary);
       border-color: var(--primary);
     }
@@ -163,7 +157,6 @@
 .features {
   transition: all 0.5s ease;
   animation: fadename 0.5s ease;
-  // transform: scale(0.9);
 
   ul {
     transform: scale(0.9);
@@ -176,7 +169,6 @@
   justify-content: space-evenly;
   font-size: 1.3rem;
   display: flex;
-  //   gap: 1rem;
 }
 .tech__btn {
   position: relative;
@@ -211,6 +203,14 @@
     width: 100%;
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+}
+
+@media (max-width: "650px") {
+  .PROJECTS {
+    .heading {
+      margin-bottom: 0;
+    }
   }
 }
 

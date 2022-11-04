@@ -1518,6 +1518,11 @@ a {
   transform-origin: bottom left;
 }
 
+@media (max-width: 650px) {
+  .PROJECTS .heading {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
