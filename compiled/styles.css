@@ -1400,7 +1400,7 @@ a {
   margin: 1rem 0;
 }
 .project__details p {
-  font-family: "Signiks";
+  font-family: "Signika";
   font-size: 1.4rem;
   margin: 1rem 1rem 1rem 0;
   line-height: 2;
@@ -2188,9 +2188,6 @@ a {
   display: none;
 }
 
-/* @media (min-width: 650px) and (max-width: 1024px) {}
-@media (max-width: 650px) {}
-@media (max-width: 550px) {} */
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
