@@ -281,59 +281,59 @@ function openResume(e) {
 }
 
 // CHANGING PROJECT IMAGE ON HOVER
-const project_images = document.querySelectorAll(".projects img");
+// const project_images = document.querySelectorAll(".projects img");
 
-project_images.forEach((image) => {
-  image.addEventListener("click", changeImage);
-  image.addEventListener("mouseover", changeImage);
-});
+// project_images.forEach((image) => {
+//   image.addEventListener("click", changeImage);
+//   image.addEventListener("mouseover", changeImage);
+// });
 
-function changeImage(e) {
-  let imgsrc = e.target.src;
+// function changeImage(e) {
+//   let imgsrc = e.target.src;
 
-  //LIGHT IMAGE TO BLACK IMAGE
-  if (e.target.classList.contains("lightImg")) {
-    e.target.style.animation = "fade 0.5s ease";
-    e.target.classList.add("darkImg");
-    e.target.classList.remove("lightImg");
+//   //LIGHT IMAGE TO BLACK IMAGE
+//   if (e.target.classList.contains("lightImg")) {
+//     e.target.style.animation = "fade 0.5s ease";
+//     e.target.classList.add("darkImg");
+//     e.target.classList.remove("lightImg");
 
-    //todoimg
-    if (e.target.classList.contains("todoimg")) {
-      let modifiedsrc = imgsrc.replace("todo2.png", "todo.png");
-      e.target.src = modifiedsrc;
-    }
+//     //todoimg
+//     if (e.target.classList.contains("todoimg")) {
+//       let modifiedsrc = imgsrc.replace("todo2.png", "todo.png");
+//       e.target.src = modifiedsrc;
+//     }
 
-    //portfolioimg
-    if (e.target.classList.contains("portfolioimg")) {
-      let modifiedsrc = imgsrc.replace(
-        "portfolio-white.png",
-        "portfolio-black.png"
-      );
-      e.target.src = modifiedsrc;
-    }
+//     //portfolioimg
+//     if (e.target.classList.contains("portfolioimg")) {
+//       let modifiedsrc = imgsrc.replace(
+//         "portfolio-white.png",
+//         "portfolio-black.png"
+//       );
+//       e.target.src = modifiedsrc;
+//     }
 
-    // BLACK IMAGE TO  LIGHT IMAGE
-  } else if (e.target.classList.contains("darkImg")) {
-    e.target.classList.remove("darkImg");
-    e.target.classList.add("lightImg");
+//     // BLACK IMAGE TO  LIGHT IMAGE
+//   } else if (e.target.classList.contains("darkImg")) {
+//     e.target.classList.remove("darkImg");
+//     e.target.classList.add("lightImg");
 
-    //todoimg
-    if (e.target.classList.contains("todoimg")) {
-      let modifiedsrc = imgsrc.replace("todo.png", "todo2.png");
-      e.target.src = modifiedsrc;
-    }
+//     //todoimg
+//     if (e.target.classList.contains("todoimg")) {
+//       let modifiedsrc = imgsrc.replace("todo.png", "todo2.png");
+//       e.target.src = modifiedsrc;
+//     }
 
-    //portfolioimg
-    if (e.target.classList.contains("portfolioimg")) {
-      let modifiedsrc = imgsrc.replace(
-        "portfolio-black.png",
-        "portfolio-white.png"
-      );
-      e.target.src = modifiedsrc;
-    }
-  }
+//     //portfolioimg
+//     if (e.target.classList.contains("portfolioimg")) {
+//       let modifiedsrc = imgsrc.replace(
+//         "portfolio-black.png",
+//         "portfolio-white.png"
+//       );
+//       e.target.src = modifiedsrc;
+//     }
+//   }
 
-  setTimeout(() => {
-    e.target.style.animation = "";
-  }, 600);
-}
+//   setTimeout(() => {
+//     e.target.style.animation = "";
+//   }, 600);
+// }
