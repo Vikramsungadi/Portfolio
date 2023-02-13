@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./compiled/styles.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -758,7 +758,12 @@
       </div>
 
       <!-- SKILLS SECTION -->
-      <div id="skills__section" class="skills--div">
+      <div
+        id="skills__section"
+        data-aos="flip-up"
+        data-aos-anchor-placement="bottom-bottom"
+        class="skills--div"
+      >
         <div class="skills--div1">
           <div class="skill">
             <img src="./images/icons/svg/python svg.svg" alt="" />
@@ -802,7 +807,12 @@
       <div class="PROJECTS">
         <h2 class="heading">PROJECTS</h2>
         <div id="projects_section" class="projects">
-          <div class="project--wrapper">
+          <div
+            class="project--wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="project">
               <div class="project__image">
                 <img
@@ -852,7 +862,13 @@
               <span class="tech__btn"> JavaScript </span>
             </div>
           </div>
-          <div class="project--wrapper">
+          <div
+            class="project--wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="150"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="project">
               <div class="project__image">
                 <img
@@ -900,7 +916,13 @@
               <span class="tech__btn"> CSS </span>
             </div>
           </div>
-          <div class="project--wrapper">
+          <div
+            class="project--wrapper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="300"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="project">
               <div class="project__image">
                 <img
@@ -955,7 +977,12 @@
       <!-- EDUCATION SECTION -->
       <div class="education--section">
         <div class="education">
-          <div class="education__image">
+          <div
+            class="education__image"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+          >
             <h2 class="heading">EDUCATION</h2>
             <div class="img">
               <svg
@@ -1923,7 +1950,12 @@
             </div>
           </div>
           <div class="education__details">
-            <div class="btech">
+            <div
+              class="btech"
+              data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="800"
+            >
               <h2>
                 <a
                   onclick="window.open(this.href,'_blank');return false;"
@@ -1943,7 +1975,12 @@
               </p>
             </div>
 
-            <div class="diploma">
+            <div
+              class="diploma"
+              data-aos="fade-left"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="800"
+            >
               <h2>
                 <a
                   onclick="window.open(this.href,'_blank');return false;"
@@ -1969,7 +2006,12 @@
       <div class="ABOUT" id="about_section">
         <h2 class="heading">ABOUT</h2>
         <div class="about--section">
-          <div class="category">
+          <div
+            class="category"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+          >
             <div class="category__side">
               <h2 style="background-color: var(--about-background); opacity: 1">
                 FrontEnd
@@ -2001,7 +2043,13 @@
               </div>
             </div>
           </div>
-          <div class="about">
+          <div
+            class="about"
+            data-aos-duration="800"
+            data-aos-delay="250"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div class="about__side">
               <h2 style="background-color: var(--about-background); opacity: 1">
                 About
@@ -2139,6 +2187,10 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   <!-- </html> -->
 </html>

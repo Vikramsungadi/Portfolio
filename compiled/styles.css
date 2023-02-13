@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Signika:wght@100;200;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;300;400;500;600;700&display=swap");
-@-webkit-keyframes slidein {
-  0% {
-    transform: translateX(120px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 @keyframes slidein {
   0% {
     transform: translateX(120px);
@@ -16,31 +8,12 @@
     transform: translateX(0);
   }
 }
-@-webkit-keyframes slideout {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200px);
-  }
-}
 @keyframes slideout {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(200px);
-  }
-}
-@-webkit-keyframes pop {
-  0% {
-    transform: scale(1.7);
-  }
-  50% {
-    transform: scale(0.2);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 @keyframes pop {
@@ -54,34 +27,12 @@
     transform: scale(1);
   }
 }
-@-webkit-keyframes popimg {
-  0% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes popimg {
   0% {
     transform: scale(0.95);
   }
   100% {
     transform: scale(1);
-  }
-}
-@-webkit-keyframes popup {
-  0% {
-    scale: 3;
-  }
-  30% {
-    scale: 5;
-  }
-  70% {
-    scale: 2;
-  }
-  100% {
-    scale: 0.85;
   }
 }
 @keyframes popup {
@@ -96,65 +47,6 @@
   }
   100% {
     scale: 0.85;
-  }
-}
-@-webkit-keyframes fadename {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 1;
-  }
-  15% {
-    opacity: 0.95;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 0.8;
-  }
-  30% {
-    opacity: 0.1;
-  }
-  35% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.1;
-  }
-  65% {
-    opacity: 0.9;
-  }
-  70% {
-    opacity: 0;
-  }
-  74% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0.9;
-  }
-  79% {
-    opacity: 0.9;
-  }
-  80% {
-    opacity: 0.5;
-  }
-  90% {
-    opacity: 0.7;
-  }
-  95% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fadename {
@@ -216,17 +108,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -238,28 +119,12 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes inv {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: auto;
-  }
-}
 @keyframes inv {
   0% {
     width: 0;
   }
   100% {
     width: auto;
-  }
-}
-@-webkit-keyframes rotateinf {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
   }
 }
 @keyframes rotateinf {
@@ -270,28 +135,12 @@
     rotate: 360deg;
   }
 }
-@-webkit-keyframes rotaterev {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: -360deg;
-  }
-}
 @keyframes rotaterev {
   0% {
     rotate: 0deg;
   }
   100% {
     rotate: -360deg;
-  }
-}
-@-webkit-keyframes wrench {
-  80% {
-    rotate: -15deg;
-  }
-  100% {
-    rotate: 5deg;
   }
 }
 @keyframes wrench {
@@ -302,34 +151,11 @@
     rotate: 5deg;
   }
 }
-@-webkit-keyframes hide {
-  0% {
-    opacity: 0;
-    translate: -120px 0;
-    z-index: -20;
-  }
-  100% {
-    translate: 0;
-  }
-}
 @keyframes hide {
   0% {
     opacity: 0;
     translate: -120px 0;
     z-index: -20;
-  }
-  100% {
-    translate: 0;
-  }
-}
-@-webkit-keyframes hide2 {
-  0% {
-    opacity: 0;
-    translate: -150px 0;
-    z-index: -20;
-  }
-  30% {
-    opacity: 0;
   }
   100% {
     translate: 0;
@@ -348,56 +174,12 @@
     translate: 0;
   }
 }
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(500px);
-  }
-}
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(500px);
-  }
-}
-@-webkit-keyframes slideup {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  13% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0);
-  }
-  37% {
-    transform: translateY(-2.6rem);
-  }
-  50% {
-    transform: translateY(-2.6rem);
-  }
-  63% {
-    transform: translateY(-5.1rem);
-  }
-  75% {
-    transform: translateY(-5.1rem);
-    opacity: 1;
-  }
-  90% {
-    transform: translateY(-5.1rem);
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-5.1rem);
-    opacity: 0;
   }
 }
 @keyframes slideup {
@@ -436,18 +218,6 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes navAnim {
-  0% {
-    opacity: 0;
-    height: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    height: 100%;
-    transform: translateY(0);
-  }
-}
 @keyframes navAnim {
   0% {
     opacity: 0;
@@ -460,39 +230,15 @@
     transform: translateY(0);
   }
 }
-@-webkit-keyframes themeAnim {
-  0% {
-    width: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    width: -webkit-fit-content;
-    width: fit-content;
-    transform: translateX(0);
-  }
-}
 @keyframes themeAnim {
   0% {
     width: 0;
     transform: translateX(100%);
   }
   100% {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     transform: translateX(0);
-  }
-}
-@-webkit-keyframes fadeup {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.7;
   }
 }
 @keyframes fadeup {
@@ -507,28 +253,12 @@
     opacity: 0.7;
   }
 }
-@-webkit-keyframes slideFromTop {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 @keyframes slideFromTop {
   0% {
     height: 0;
   }
   100% {
     height: 100%;
-  }
-}
-@-webkit-keyframes slideFromBottom {
-  0% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
   }
 }
 @keyframes slideFromBottom {
@@ -539,28 +269,12 @@
     height: 0;
   }
 }
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 @keyframes fadein {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 100%;
-  }
-}
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
   }
 }
 @keyframes fadeout {
@@ -777,7 +491,6 @@ a {
 
 .logo {
   font-family: "Montserrat", sans-serif;
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   display: flex;
@@ -808,8 +521,7 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid var(--secondary);
   min-height: 6rem;
-  -webkit-animation: navAnim 2s ease-in-out;
-          animation: navAnim 2s ease-in-out;
+  animation: navAnim 2s ease-in-out;
 }
 
 .links, .contact .links {
@@ -888,23 +600,20 @@ a {
 
 .menu {
   display: none;
-  -webkit-animation: pop 0.5s ease;
-          animation: pop 0.5s ease;
+  animation: pop 0.5s ease;
 }
 
 /* MEDIA QUERIES */
 @media (min-width: 650px) and (max-width: 1024px) {
   .menu {
     display: none;
-    -webkit-animation: pop 0.5s ease;
-            animation: pop 0.5s ease;
+    animation: pop 0.5s ease;
   }
 }
 @media (max-width: 650px) {
   .navbar {
     height: 4rem;
-    -webkit-animation: fade 2s ease-in-out;
-            animation: fade 2s ease-in-out;
+    animation: fade 2s ease-in-out;
   }
   .links, .contact .links {
     display: none;
@@ -918,8 +627,7 @@ a {
     font-size: 2rem;
     margin-right: 2rem;
     cursor: pointer;
-    -webkit-animation: pop 0.5s ease;
-            animation: pop 0.5s ease;
+    animation: pop 0.5s ease;
   }
   .menu--links {
     height: 100vh;
@@ -931,8 +639,7 @@ a {
     right: 0;
     font-size: 1.5rem;
     /* transition: all 0.5s; */
-    -webkit-animation: slidein 0.3s ease;
-            animation: slidein 0.3s ease;
+    animation: slidein 0.3s ease;
     z-index: 10;
   }
   .menu--links ul {
@@ -1036,7 +743,7 @@ a {
 }
 @media (max-width: 550px) {
   .skills--div1,
-.skills--div2 {
+  .skills--div2 {
     gap: 2rem;
     padding: 0 1rem;
   }
@@ -1047,7 +754,6 @@ a {
 }
 
 .theme {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
@@ -1064,8 +770,7 @@ a {
   min-width: 4rem;
   padding: 1rem 0;
   border-radius: 10px 0 0 10px;
-  -webkit-animation: themeAnim 2s ease-in-out;
-          animation: themeAnim 2s ease-in-out;
+  animation: themeAnim 2s ease-in-out;
 }
 .theme div {
   z-index: 2;
@@ -1110,8 +815,7 @@ a {
 }
 .intro .hi {
   position: relative;
-  -webkit-animation: hide 1s ease;
-          animation: hide 1s ease;
+  animation: hide 1s ease;
 }
 .intro h1 {
   display: inline-block;
@@ -1122,8 +826,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.4s ease;
-  -webkit-animation: fade 2s ease-in-out;
-          animation: fade 2s ease-in-out;
+  animation: fade 2s ease-in-out;
 }
 .intro p {
   position: relative;
@@ -1159,8 +862,7 @@ a {
   font-size: 1.5rem;
   display: block;
   opacity: 0.7;
-  -webkit-animation: fadeup 3s ease-in;
-          animation: fadeup 3s ease-in;
+  animation: fadeup 3s ease-in;
 }
 .intro:hover p::before {
   width: 100%;
@@ -1171,8 +873,7 @@ a {
 .name {
   position: relative;
   display: inline-block;
-  -webkit-animation: fadename 1.5s ease-in-out;
-          animation: fadename 1.5s ease-in-out;
+  animation: fadename 1.5s ease-in-out;
 }
 
 .bulb {
@@ -1188,8 +889,7 @@ a {
   position: relative;
 }
 .intro-2 .img {
-  -webkit-animation: popimg 2s ease;
-          animation: popimg 2s ease;
+  animation: popimg 2s ease;
   position: relative;
   max-width: 450px;
 }
@@ -1354,12 +1054,10 @@ a {
   display: flex;
   flex-direction: column;
   box-shadow: var(--card-shadow);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
-  -webkit-animation: fade 0.5s ease;
-          animation: fade 0.5s ease;
+  animation: fade 0.5s ease;
 }
 
 .project--wrapper {
@@ -1467,8 +1165,7 @@ a {
 
 .features {
   transition: all 0.5s ease;
-  -webkit-animation: fadename 0.5s ease;
-          animation: fadename 0.5s ease;
+  animation: fadename 0.5s ease;
 }
 .features ul {
   transform: scale(0.9);
@@ -1606,20 +1303,16 @@ a {
 .education__details .branch .fa-gear {
   opacity: 0.5;
   font-size: 2rem;
-  -webkit-animation: rotateinf 2000ms ease;
-          animation: rotateinf 2000ms ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation: rotateinf 2000ms ease;
+  animation-iteration-count: infinite;
   transition: opacity 0.3s ease;
 }
 .education__details .branch #gear2 {
   transform: rotate(280deg);
   font-size: 1.95rem;
   translate: -4.5px -6px;
-  -webkit-animation: rotaterev 2000ms ease;
-          animation: rotaterev 2000ms ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation: rotaterev 2000ms ease;
+  animation-iteration-count: infinite;
 }
 .education__details .grade {
   top: 0;
@@ -1768,8 +1461,7 @@ a {
   z-index: 3;
 }
 .category__side h2 {
-  -webkit-animation: fade 0.5s ease-in;
-          animation: fade 0.5s ease-in;
+  animation: fade 0.5s ease-in;
 }
 
 .frontend,
@@ -1779,8 +1471,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  -webkit-animation: hide 0.5s ease-in;
-          animation: hide 0.5s ease-in;
+  animation: hide 0.5s ease-in;
   border-radius: 0 10px 10px 0;
 }
 .frontend h3,
@@ -1856,8 +1547,7 @@ a {
   min-height: 152px;
   padding: 1rem 1rem 1rem 1.5rem;
   border-radius: 0 10px 10px 0;
-  -webkit-animation: hide2 0.5s ease-in;
-          animation: hide2 0.5s ease-in;
+  animation: hide2 0.5s ease-in;
 }
 .about__explain p,
 .interest__explain p {
@@ -1876,13 +1566,13 @@ a {
     justify-items: flex-start;
   }
   .category,
-.about {
+  .about {
     grid-template-columns: auto 1fr;
     width: 100%;
     min-height: 20rem;
   }
   .category h2,
-.about h2 {
+  .about h2 {
     font-size: 1.5rem;
   }
   .about__details {
@@ -1960,10 +1650,8 @@ a {
 }
 .stack__skill {
   padding: 1px 0;
-  -webkit-animation: slideup 10s linear;
-          animation: slideup 10s linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation: slideup 10s linear;
+  animation-iteration-count: infinite;
 }
 
 .social {
@@ -1977,7 +1665,6 @@ a {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
   gap: 2rem;
@@ -2115,8 +1802,7 @@ a {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-animation: slideFromTop 2s ease;
-          animation: slideFromTop 2s ease;
+  animation: slideFromTop 2s ease;
   -ms-overflow-style: none;
   scrollbar-width: none;
   transition: width 0.3s ease;
