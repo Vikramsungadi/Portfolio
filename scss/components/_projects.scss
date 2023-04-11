@@ -3,234 +3,234 @@
 @use "../partials/typography" as *;
 
 .PROJECTS {
-  margin: 10rem auto 5rem auto;
-  overflow: hidden;
+	margin: 10rem auto 5rem auto;
+	overflow: hidden;
 
-  .heading {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 4rem;
-    transition: color, scale 0.5s ease-out;
-  }
-  &:hover .heading,
-  &:focus .heading {
-    scale: 1.03;
-    color: var(--primary);
-  }
+	.heading {
+		font-size: 3rem;
+		text-align: center;
+		margin-bottom: 4rem;
+		transition: color, scale 0.5s ease-out;
+	}
+	&:hover .heading,
+	&:focus .heading {
+		scale: 1.03;
+		color: var(--primary);
+	}
 }
 .projects {
-  padding-bottom: 1rem;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  min-height: 500px;
+	padding-bottom: 1rem;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	min-height: 500px;
 }
 .project {
-  border-radius: 10px;
-  padding-bottom: 1rem;
-  max-width: 350px;
-  background-color: var(--card-bg);
-  display: flex;
-  flex-direction: column;
-  // border: 1px solid var(--primary);
-  box-shadow: var(--card-shadow);
-  height: fit-content;
-  overflow: hidden;
-  animation: fade 0.5s ease;
+	border-radius: 10px;
+	padding-bottom: 1rem;
+	max-width: 350px;
+	background-color: var(--card-bg);
+	display: flex;
+	flex-direction: column;
+	// border: 1px solid var(--secondary-dark);
+	box-shadow: var(--card-shadow);
+	height: fit-content;
+	overflow: hidden;
+	animation: fade 0.5s ease;
 }
 
 .project--wrapper {
-  transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 
-  &:hover {
-    scale: 1.03;
-  }
+	&:hover {
+		scale: 1.02;
+	}
 }
 
 .project__image {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-  max-height: 250px;
-  margin: 1rem 1rem 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	overflow: hidden;
+	max-height: 250px;
+	margin: 1rem 1rem 0;
 
-  img {
-    object-fit: cover;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    height: 175px;
-    border-bottom: 1px solid var(--secondary-dark);
-  }
+	img {
+		object-fit: cover;
+		border-radius: 10px;
+		overflow: hidden;
+		width: 300px;
+		height: 175px;
+		border-bottom: 1px solid var(--secondary-dark);
+	}
 }
 
 .project__details {
-  transition: all 0.3s ease;
-  margin: 0 2rem 2rem;
+	transition: all 0.3s ease;
+	margin: 0 2rem 2rem;
 
-  h3 {
-    font-family: "Caveat";
-    color: var(--card-h3);
-    font-size: 3rem;
-    margin: 1rem 0;
-  }
+	h3 {
+		font-family: "Caveat";
+		color: var(--card-h3);
+		font-size: 3rem;
+		margin: 1rem 0;
+	}
 
-  p {
-    font-family: "Signika";
-    font-size: 1.4rem;
-    margin: 1rem 1rem 1rem 0;
-    line-height: 2;
-  }
+	p {
+		font-family: "Signika";
+		font-size: 1.4rem;
+		margin: 1rem 1rem 1rem 0;
+		line-height: 2;
+	}
 
-  .desc {
-    position: relative;
-  }
+	.desc {
+		position: relative;
+	}
 
-  i {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1px;
-    right: -5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+	i {
+		font-size: 1.5rem;
+		position: absolute;
+		top: 1px;
+		right: -5px;
+		cursor: pointer;
+		transition: all 0.3s ease;
 
-    &:hover {
-      color: var(--primary);
-    }
-  }
+		&:hover {
+			color: var(--primary);
+		}
+	}
 
-  ul {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 0 0 0;
-  }
+	ul {
+		display: flex;
+		gap: 1rem;
+		margin: 2rem 0 0 0;
+	}
 
-  li {
-    display: inline-block;
-    text-align: center;
-    // max-width: 80px;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    background-color: var(--navy);
-    border: 0.5px solid var(--stack-border);
-    text-transform: uppercase;
-    list-style: none;
-    transition: all 0.3s ease;
+	li {
+		display: inline-block;
+		text-align: center;
+		// max-width: 80px;
+		padding: 0.3rem 1rem;
+		border-radius: 10px;
+		background-color: var(--navy);
+		border: 0.5px solid var(--stack-border);
+		text-transform: uppercase;
+		list-style: none;
+		transition: all 0.3s ease;
 
-    span {
-      visibility: hidden;
-      padding: 0 1rem;
-      transition: all 0.3s ease;
-    }
+		span {
+			visibility: hidden;
+			padding: 0 1rem;
+			transition: all 0.3s ease;
+		}
 
-    &:hover {
-      color: var(--primary);
-      border-color: var(--primary);
-    }
-  }
+		&:hover {
+			color: var(--primary);
+			border-color: var(--primary);
+		}
+	}
 }
 
 .project__source {
-  align-self: flex-end;
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  color: var(--gray);
-  font-size: 1.5rem;
+	align-self: flex-end;
+	display: flex;
+	gap: 1rem;
+	margin-top: 0.5rem;
+	color: var(--gray);
+	font-size: 1.5rem;
 
-  i {
-    transition: color, scale 0.3s ease;
-    &:hover,
-    &:focus,
-    &:focus-visible {
-      color: var(--primary);
-      scale: 1.2;
-    }
-  }
+	i {
+		transition: color, scale 0.3s ease;
+		&:hover,
+		&:focus,
+		&:focus-visible {
+			color: var(--primary);
+			scale: 1.2;
+		}
+	}
 }
 .features.none {
-  display: none;
+	display: none;
 }
 .features {
-  transition: all 0.5s ease;
-  animation: fadename 0.5s ease;
+	transition: all 0.5s ease;
+	animation: fadename 0.5s ease;
 
-  ul {
-    transform: scale(0.9);
-    transition: all 0.5s ease;
-  }
+	ul {
+		transform: scale(0.9);
+		transition: all 0.5s ease;
+	}
 }
 
 .tech {
-  margin-top: 1.5rem;
-  justify-content: space-evenly;
-  font-size: 1.3rem;
-  display: flex;
+	margin-top: 1.5rem;
+	justify-content: space-evenly;
+	font-size: 1.3rem;
+	display: flex;
 }
 .tech__btn {
-  position: relative;
-  display: inline-block;
-  border: 1px solid var(--secondary-dark);
-  padding: 0.5rem 1rem;
-  border-radius: 7px;
-  transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	border: 1px solid var(--secondary-dark);
+	padding: 0.5rem 1rem;
+	border-radius: 7px;
+	transition: all 0.3s ease;
 
-  &::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-  }
-  &::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    inset: 0 0 0 0;
-    background: var(--stack-hover);
-    z-index: -1;
-    transition: transform 0.3s ease;
-  }
-  &:hover {
-    color: var(--white);
-    border-color: var(--stack-border);
-  }
-  &:hover::before {
-    width: 100%;
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+	&::before {
+		transform: scaleX(0);
+		transform-origin: bottom right;
+	}
+	&::before {
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		inset: 0 0 0 0;
+		background: var(--stack-hover);
+		z-index: -1;
+		transition: transform 0.3s ease;
+	}
+	&:hover {
+		color: var(--white);
+		border-color: var(--stack-border);
+	}
+	&:hover::before {
+		width: 100%;
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
 }
 
 @media (max-width: "650px") {
-  .PROJECTS {
-    .heading {
-      margin-bottom: 0;
-    }
-  }
+	.PROJECTS {
+		.heading {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr;
-  }
-  .project--wrapper {
-    margin-top: 3rem;
-  }
+	.projects {
+		grid-template-columns: 1fr;
+	}
+	.project--wrapper {
+		margin-top: 3rem;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1140px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width: 1240px) {
-  .project {
-    margin-top: 3rem;
-  }
+	.project {
+		margin-top: 3rem;
+	}
 }

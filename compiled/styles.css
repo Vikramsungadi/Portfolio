@@ -1061,10 +1061,10 @@ a {
 }
 
 .project--wrapper {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .project--wrapper:hover {
-  scale: 1.03;
+  scale: 1.02;
 }
 
 .project__image {
