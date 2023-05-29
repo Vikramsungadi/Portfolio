@@ -1505,6 +1505,8 @@ a {
   justify-self: flex-start;
   max-width: 100%;
   min-width: 18rem;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .list__side {
